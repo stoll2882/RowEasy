@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ConnectedViewController.getGeneralRowingInformation(_:):ConnectedViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "workoutOptional?.totalTime">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ConnectedViewController.peripheral(_:didDiscoverServices:):ConnectedViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "RowerPeripheral.connectedPeripheral">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ConnectedViewController.endWorkoutPressed():ConnectedViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "WorkoutCell.update(with:):WorkoutCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "workout.distance">
+            </PersistentString>
+            <PersistentString
+               value = "workout.date">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ConnectedViewController.updateView():ConnectedViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ConnectedPeripheral.elapsedTime">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BluetoothViewController.connectClicked():BluetoothViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ConnectedPeripheral.connecedPeripheral.services">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BluetoothViewController.peripheral(_:didDiscoverCharacteristicsFor:error:):BluetoothViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "characteristic.uuid.uuidString">
+            </PersistentString>
+            <PersistentString
+               value = "service.uuid.uuidString">
+            </PersistentString>
+            <PersistentString
+               value = "characteristic.value">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ConnectedViewController.viewDidLoad():ConnectedViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "WorkoutDetailViewController.displayWorkout():WorkoutDetailViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "workout.totalTime">
+            </PersistentString>
+            <PersistentString
+               value = "workout.distance">
+            </PersistentString>
+            <PersistentString
+               value = "workout.avgStrokeRate">
+            </PersistentString>
+            <PersistentString
+               value = "workout.avgSplit">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BluetoothViewController.centralManager(_:didConnect:):BluetoothViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "BluetoothViewController.peripheral(_:didDiscoverServices:):BluetoothViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "service.uuid.uuidString">
+            </PersistentString>
+            <PersistentString
+               value = "RowerPeripheral.serviceNumberIdentifier.uuidString">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PastWorkoutsViewController.loadWorkouts():PastWorkoutsViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "BluetoothViewController.discoverServices(_:):BluetoothViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ConnectedPeripherals.connectedPeripherals.services">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BluetoothViewController.characteristicToString(_:):BluetoothViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ConnectedViewController.createNewWorkout():ConnectedViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "newWorkout.avgSplit">
+            </PersistentString>
+            <PersistentString
+               value = "newWorkout.date">
+            </PersistentString>
+            <PersistentString
+               value = "dateVal">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BluetoothViewController.centralManager(_:didDiscover:advertisementData:rssi:):BluetoothViewController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

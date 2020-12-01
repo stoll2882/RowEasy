@@ -11,11 +11,21 @@
 		9F255B552571B89700388811 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F255B542571B89700388811 /* SceneDelegate.swift */; };
 		9F255B572571B89700388811 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F255B562571B89700388811 /* ViewController.swift */; };
 		9F255B5A2571B89700388811 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F255B582571B89700388811 /* Main.storyboard */; };
-		9F255B5D2571B89700388811 /* Final_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F255B5B2571B89700388811 /* Final_Project.xcdatamodeld */; };
+		9F255B5D2571B89700388811 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F255B5B2571B89700388811 /* DataModel.xcdatamodeld */; };
 		9F255B5F2571B89900388811 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F255B5E2571B89900388811 /* Assets.xcassets */; };
 		9F255B622571B89900388811 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F255B602571B89900388811 /* LaunchScreen.storyboard */; };
 		9F255B6D2571B89900388811 /* Final_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F255B6C2571B89900388811 /* Final_ProjectTests.swift */; };
 		9F255B782571B89900388811 /* Final_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F255B772571B89900388811 /* Final_ProjectUITests.swift */; };
+		9F255B892571C8E300388811 /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F255B882571C8E300388811 /* BluetoothViewController.swift */; };
+		9F255BA62571F87B00388811 /* BluetoothDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F255BA52571F87B00388811 /* BluetoothDeviceCell.swift */; };
+		9F255BAB257207D500388811 /* ConnectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F255BAA257207D500388811 /* ConnectedViewController.swift */; };
+		9F255BB0257208AB00388811 /* RowerPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F255BAF257208AB00388811 /* RowerPeripheral.swift */; };
+		9F255BB52572326400388811 /* ConnectedPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F255BB42572326400388811 /* ConnectedPeripheral.swift */; };
+		9F255BC32574828400388811 /* Workout+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F255BC12574828400388811 /* Workout+CoreDataClass.swift */; };
+		9F255BC42574828400388811 /* Workout+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F255BC22574828400388811 /* Workout+CoreDataProperties.swift */; };
+		9F255BCC2574B7E200388811 /* PastWorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F255BCB2574B7E200388811 /* PastWorkoutsViewController.swift */; };
+		9F255BD12574BC1400388811 /* WorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F255BD02574BC1400388811 /* WorkoutCell.swift */; };
+		9F255BD62574D88200388811 /* WorkoutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F255BD52574D88200388811 /* WorkoutDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,16 @@
 		9F255B732571B89900388811 /* Final_ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Final_ProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F255B772571B89900388811 /* Final_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Final_ProjectUITests.swift; sourceTree = "<group>"; };
 		9F255B792571B89900388811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F255B882571C8E300388811 /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
+		9F255BA52571F87B00388811 /* BluetoothDeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDeviceCell.swift; sourceTree = "<group>"; };
+		9F255BAA257207D500388811 /* ConnectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedViewController.swift; sourceTree = "<group>"; };
+		9F255BAF257208AB00388811 /* RowerPeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowerPeripheral.swift; sourceTree = "<group>"; };
+		9F255BB42572326400388811 /* ConnectedPeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedPeripheral.swift; sourceTree = "<group>"; };
+		9F255BC12574828400388811 /* Workout+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workout+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9F255BC22574828400388811 /* Workout+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workout+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9F255BCB2574B7E200388811 /* PastWorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastWorkoutsViewController.swift; sourceTree = "<group>"; };
+		9F255BD02574BC1400388811 /* WorkoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCell.swift; sourceTree = "<group>"; };
+		9F255BD52574D88200388811 /* WorkoutDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +121,8 @@
 		9F255B512571B89700388811 /* Final_Project */ = {
 			isa = PBXGroup;
 			children = (
+				9F255BC12574828400388811 /* Workout+CoreDataClass.swift */,
+				9F255BC22574828400388811 /* Workout+CoreDataProperties.swift */,
 				9F255B522571B89700388811 /* AppDelegate.swift */,
 				9F255B542571B89700388811 /* SceneDelegate.swift */,
 				9F255B562571B89700388811 /* ViewController.swift */,
@@ -108,7 +130,15 @@
 				9F255B5E2571B89900388811 /* Assets.xcassets */,
 				9F255B602571B89900388811 /* LaunchScreen.storyboard */,
 				9F255B632571B89900388811 /* Info.plist */,
-				9F255B5B2571B89700388811 /* Final_Project.xcdatamodeld */,
+				9F255B5B2571B89700388811 /* DataModel.xcdatamodeld */,
+				9F255BD52574D88200388811 /* WorkoutDetailViewController.swift */,
+				9F255B882571C8E300388811 /* BluetoothViewController.swift */,
+				9F255BCB2574B7E200388811 /* PastWorkoutsViewController.swift */,
+				9F255BD02574BC1400388811 /* WorkoutCell.swift */,
+				9F255BAA257207D500388811 /* ConnectedViewController.swift */,
+				9F255BAF257208AB00388811 /* RowerPeripheral.swift */,
+				9F255BB42572326400388811 /* ConnectedPeripheral.swift */,
+				9F255BA52571F87B00388811 /* BluetoothDeviceCell.swift */,
 			);
 			path = Final_Project;
 			sourceTree = "<group>";
@@ -261,10 +291,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F255BCC2574B7E200388811 /* PastWorkoutsViewController.swift in Sources */,
+				9F255BD62574D88200388811 /* WorkoutDetailViewController.swift in Sources */,
+				9F255BD12574BC1400388811 /* WorkoutCell.swift in Sources */,
+				9F255BAB257207D500388811 /* ConnectedViewController.swift in Sources */,
+				9F255BC32574828400388811 /* Workout+CoreDataClass.swift in Sources */,
+				9F255BA62571F87B00388811 /* BluetoothDeviceCell.swift in Sources */,
 				9F255B572571B89700388811 /* ViewController.swift in Sources */,
 				9F255B532571B89700388811 /* AppDelegate.swift in Sources */,
-				9F255B5D2571B89700388811 /* Final_Project.xcdatamodeld in Sources */,
+				9F255B892571C8E300388811 /* BluetoothViewController.swift in Sources */,
+				9F255BB52572326400388811 /* ConnectedPeripheral.swift in Sources */,
+				9F255B5D2571B89700388811 /* DataModel.xcdatamodeld in Sources */,
+				9F255BC42574828400388811 /* Workout+CoreDataProperties.swift in Sources */,
 				9F255B552571B89700388811 /* SceneDelegate.swift in Sources */,
+				9F255BB0257208AB00388811 /* RowerPeripheral.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,13 +639,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		9F255B5B2571B89700388811 /* Final_Project.xcdatamodeld */ = {
+		9F255B5B2571B89700388811 /* DataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				9F255B5C2571B89700388811 /* Final_Project.xcdatamodel */,
 			);
 			currentVersion = 9F255B5C2571B89700388811 /* Final_Project.xcdatamodel */;
-			path = Final_Project.xcdatamodeld;
+			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
