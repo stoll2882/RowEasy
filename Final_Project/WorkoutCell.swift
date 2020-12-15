@@ -1,6 +1,9 @@
 //
 //  WorkoutCell.swift
 //  Final_Project
+//  Sam Toll
+//  CPSC 315
+//  December 14th, 2020
 //
 //  Created by Sam Toll on 11/29/20.
 //
@@ -9,6 +12,7 @@ import Foundation
 import UIKit
 import CoreData
 
+// class that represents one completed workout cell
 class WorkoutCell: UITableViewCell {
     
     // fields on the table view cell

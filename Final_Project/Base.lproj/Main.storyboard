@@ -19,27 +19,37 @@
                             <stackView opaque="NO" contentMode="top" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="nYU-xT-nbQ">
                                 <rect key="frame" x="16" y="104" width="382" height="458"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RowEasy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwZ-pn-6Ji">
-                                        <rect key="frame" x="109" y="0.0" width="164.5" height="316"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwZ-pn-6Ji">
+                                        <rect key="frame" x="80" y="0.0" width="222.5" height="320"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="RowEasy">
+                                                <attributes>
+                                                    <font key="NSFont" size="50" name="Copperplate"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="500" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7WQ-ci-m9E">
-                                        <rect key="frame" x="88.5" y="366" width="205" height="92"/>
+                                        <rect key="frame" x="52" y="370" width="278" height="88"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMg-S4-KBI">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="41"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <state key="normal" title="New Workout"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="278" height="39"/>
+                                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="26"/>
+                                                <state key="normal" title="New Workout">
+                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <segue destination="gdw-zn-wqU" kind="show" identifier="newWorkoutSegue" id="RJn-Zy-hhw"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDg-87-wPb">
-                                                <rect key="frame" x="0.0" y="51" width="205" height="41"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <state key="normal" title="View Past Workouts"/>
+                                                <rect key="frame" x="0.0" y="49" width="278" height="39"/>
+                                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="26"/>
+                                                <state key="normal" title="View Past Workouts">
+                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <segue destination="J3p-iD-h2Q" kind="show" identifier="pastWorkoutsSegue" id="cj3-IB-tnq"/>
                                                 </connections>
@@ -50,7 +60,8 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nYU-xT-nbQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Dgn-fs-ATn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nYU-xT-nbQ" secondAttribute="bottom" constant="300" id="cz7-Bc-Ivy"/>
@@ -74,7 +85,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9vK-i9-ar6">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorkoutCell" id="Guo-Ge-nD9" userLabel="WorkoutCell" customClass="WorkoutCell" customModule="Final_Project" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43"/>
@@ -83,22 +94,30 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="112" translatesAutoresizingMaskIntoConstraints="NO" id="iGu-fI-fOz">
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iGu-fI-fOz">
                                                     <rect key="frame" x="20" y="11" width="374" height="21"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aig-Wg-RYp">
-                                                            <rect key="frame" x="0.0" y="0.0" width="131" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aig-Wg-RYp">
+                                                            <rect key="frame" x="0.0" y="0.0" width="301.5" height="21"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="Date">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="20" name="Copperplate"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lM7-Rr-87u">
-                                                            <rect key="frame" x="243" y="0.0" width="131" height="21"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="38" id="2HU-w4-QTC"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lM7-Rr-87u">
+                                                            <rect key="frame" x="301.5" y="0.0" width="72.5" height="21"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="Meters">
+                                                                    <attributes>
+                                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                        <font key="NSFont" size="20" name="Copperplate"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -111,6 +130,7 @@
                                                 <constraint firstItem="iGu-fI-fOz" firstAttribute="top" secondItem="nl6-TO-44U" secondAttribute="topMargin" id="NCz-14-8UF"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                                         <connections>
                                             <outlet property="dateLabel" destination="aig-Wg-RYp" id="3NP-JE-ZtC"/>
                                             <outlet property="metersLabel" destination="lM7-Rr-87u" id="gMW-YP-VFh"/>
@@ -121,7 +141,8 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7GN-LC-OSp"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7GN-LC-OSp" firstAttribute="bottom" secondItem="9vK-i9-ar6" secondAttribute="bottom" id="P2B-GP-mJS"/>
                             <constraint firstItem="7GN-LC-OSp" firstAttribute="trailing" secondItem="9vK-i9-ar6" secondAttribute="trailing" id="ZZH-Ip-Dir"/>
@@ -142,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ewH-O5-CVp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1430" y="455"/>
+            <point key="canvasLocation" x="1428.985507246377" y="454.6875"/>
         </scene>
         <!--Workout Detail View Controller-->
         <scene sceneID="myZ-DV-OBY">
@@ -158,34 +179,60 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="43c-vO-RHb">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="357"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Date: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6v-5m-adH">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6v-5m-adH">
                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="163"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <nil key="textColor"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Date: ">
+                                                        <attributes>
+                                                            <font key="NSFont" size="38" name="Copperplate"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average Split" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtq-Kc-iYP">
-                                                <rect key="frame" x="0.0" y="191" width="100" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtq-Kc-iYP">
+                                                <rect key="frame" x="0.0" y="191" width="141" height="20.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Average Split">
+                                                        <attributes>
+                                                            <font key="NSFont" size="20" name="Copperplate"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzw-ZB-b23">
-                                                <rect key="frame" x="0.0" y="239.5" width="67" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzw-ZB-b23">
+                                                <rect key="frame" x="0.0" y="239.5" width="89" height="20.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Distance">
+                                                        <attributes>
+                                                            <font key="NSFont" size="20" name="Copperplate"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLM-Xy-eVb">
-                                                <rect key="frame" x="0.0" y="288" width="79" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLM-Xy-eVb">
+                                                <rect key="frame" x="0.0" y="288" width="107.5" height="20.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Total Time">
+                                                        <attributes>
+                                                            <font key="NSFont" size="20" name="Copperplate"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stroke Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zki-Fs-pxn">
-                                                <rect key="frame" x="0.0" y="336.5" width="88.5" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zki-Fs-pxn">
+                                                <rect key="frame" x="0.0" y="336.5" width="123" height="20.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Stroke Rate">
+                                                        <attributes>
+                                                            <font key="NSFont" size="20" name="Copperplate"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -194,7 +241,7 @@
                                             <constraint firstAttribute="trailing" secondItem="L6v-5m-adH" secondAttribute="trailing" id="e6Z-g0-U1g"/>
                                         </constraints>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RowerImage" translatesAutoresizingMaskIntoConstraints="NO" id="83L-u6-fzM">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RowerImage2" translatesAutoresizingMaskIntoConstraints="NO" id="83L-u6-fzM">
                                         <rect key="frame" x="0.0" y="385" width="382" height="357"/>
                                     </imageView>
                                 </subviews>
@@ -207,7 +254,8 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XCV-eW-Bf1"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="j49-HQ-lza" firstAttribute="leading" secondItem="XCV-eW-Bf1" secondAttribute="leading" constant="16" id="Ei3-Jj-1aK"/>
                             <constraint firstItem="j49-HQ-lza" firstAttribute="top" secondItem="XCV-eW-Bf1" secondAttribute="top" constant="16" id="IvG-2w-u0F"/>
@@ -239,6 +287,8 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oHe-wg-5b6">
                                 <rect key="frame" x="0.0" y="88" width="414" height="748"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" systemColor="systemGray5Color"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="DDQ-2r-Vc5" userLabel="cell">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -247,6 +297,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -255,6 +306,7 @@
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="klS-n2-Zrl">
                                 <rect key="frame" x="0.0" y="826" width="414" height="60"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="UoV-P5-IsE"/>
                                 </constraints>
@@ -269,7 +321,8 @@
                             </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RuV-bh-Wig"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="oHe-wg-5b6" firstAttribute="trailing" secondItem="RuV-bh-Wig" secondAttribute="trailing" id="36B-HT-Yt7"/>
                             <constraint firstItem="oHe-wg-5b6" firstAttribute="top" secondItem="RuV-bh-Wig" secondAttribute="top" id="5d9-xf-wef"/>
@@ -308,108 +361,233 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="143" translatesAutoresizingMaskIntoConstraints="NO" id="UZr-T6-u9N">
-                                <rect key="frame" x="16" y="104" width="382" height="742"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="UZr-T6-u9N">
+                                <rect key="frame" x="16" y="104" width="382" height="461.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TTJ-nF-znI">
-                                        <rect key="frame" x="38" y="0.0" width="306" height="370"/>
+                                        <rect key="frame" x="10.5" y="0.0" width="361" height="376.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="ZlG-iL-Sdc">
-                                                <rect key="frame" x="0.0" y="0.0" width="306" height="80"/>
+                                                <rect key="frame" x="22" y="0.0" width="317.5" height="50"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kuz-my-Cbn">
-                                                        <rect key="frame" x="0.0" y="11" width="101.5" height="58.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="49"/>
-                                                        <nil key="textColor"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kuz-my-Cbn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="105" height="50"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="0:00">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="49" name="Copperplate"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="lastBaseline" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cFG-JX-Xmo">
-                                                        <rect key="frame" x="201.5" y="11.5" width="104.5" height="57.5"/>
+                                                        <rect key="frame" x="205" y="0.5" width="112.5" height="49"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqg-YF-quZ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="58" height="57.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
-                                                                <nil key="textColor"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqg-YF-quZ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="67" height="49"/>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment content="SR">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="48" name="Copperplate"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="s/m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bzd-GH-XM2">
-                                                                <rect key="frame" x="66" y="22.5" width="38.5" height="29"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                                <nil key="textColor"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bzd-GH-XM2">
+                                                                <rect key="frame" x="75" y="18" width="37.5" height="24.5"/>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment content="s/m">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="24" name="Copperplate"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="lmv-0Z-rhK"/>
-                                                </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="lastBaseline" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="qvd-CV-2Yi">
-                                                <rect key="frame" x="19.5" y="90" width="267.5" height="100"/>
+                                                <rect key="frame" x="44" y="60" width="273.5" height="84"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odc-bt-a20">
-                                                        <rect key="frame" x="0.0" y="0.0" width="169" height="99.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="83"/>
-                                                        <nil key="textColor"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odc-bt-a20">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177.5" height="84"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="0:00">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="83" name="Copperplate"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/500m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pef-xr-ggR">
-                                                        <rect key="frame" x="191" y="54" width="76.5" height="31.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <nil key="textColor"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pef-xr-ggR">
+                                                        <rect key="frame" x="199.5" y="43.5" width="74" height="26.5"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="/500m">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="26" name="Copperplate"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="L68-De-tlQ"/>
-                                                </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="lastBaseline" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ac5-Fa-HhE">
-                                                <rect key="frame" x="43" y="200" width="220.5" height="80"/>
+                                                <rect key="frame" x="66.5" y="154" width="228" height="49"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mca-lU-SOf">
-                                                        <rect key="frame" x="0.0" y="0.0" width="99.5" height="57.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
-                                                        <nil key="textColor"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mca-lU-SOf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="103" height="49"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="0:00">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="48" name="Copperplate"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="avg /500m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gq9-nC-NxJ">
-                                                        <rect key="frame" x="107.5" y="22.5" width="113" height="29"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                        <nil key="textColor"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gq9-nC-NxJ">
+                                                        <rect key="frame" x="111" y="18" width="117" height="24.5"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="avg /500m">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="24" name="Copperplate"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="qaT-y4-c7W"/>
-                                                </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="lastBaseline" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="onn-dH-7tu">
-                                                <rect key="frame" x="127" y="290" width="52.5" height="80"/>
+                                                <rect key="frame" x="155.5" y="213" width="50" height="49"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIc-ih-emX">
-                                                        <rect key="frame" x="0.0" y="0.0" width="29.5" height="57.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
-                                                        <nil key="textColor"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIc-ih-emX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="29.5" height="49"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="0">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="48" name="Copperplate"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6j-uG-W2l">
-                                                        <rect key="frame" x="32.5" y="22.5" width="20" height="29"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                        <nil key="textColor"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6j-uG-W2l">
+                                                        <rect key="frame" x="32.5" y="18" width="17.5" height="24.5"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="m">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="24" name="Copperplate"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="92q-TM-XD6"/>
-                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iD-LZ-jld">
+                                                <rect key="frame" x="0.0" y="272" width="361" height="32.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Timing Helpers Below">
+                                                        <attributes>
+                                                            <font key="NSFont" size="32" name="Copperplate"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dT7-xm-rZC">
+                                                <rect key="frame" x="50" y="314.5" width="261.5" height="62"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="lastBaseline" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="463-aO-Qwi">
+                                                        <rect key="frame" x="23" y="0.0" width="215" height="31"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlM-cT-ZnI">
+                                                                <rect key="frame" x="0.0" y="6.5" width="135" height="24.5"/>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment content="Drive Time:">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="24" name="Copperplate"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fk-Qz-WW8">
+                                                                <rect key="frame" x="143" y="0.0" width="50.5" height="33.5"/>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment content="0.0">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="33" name="Copperplate"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkW-dd-Dvb">
+                                                                <rect key="frame" x="201.5" y="6.5" width="13.5" height="24.5"/>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment content="s">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="24" name="Copperplate"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="lastBaseline" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Si0-Hl-Yh7">
+                                                        <rect key="frame" x="0.0" y="31" width="261.5" height="31"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dV5-ba-LMB">
+                                                                <rect key="frame" x="0.0" y="6.5" width="181.5" height="24.5"/>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment content="Recovery Time:">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="24" name="Copperplate"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6d-T0-FSA">
+                                                                <rect key="frame" x="189.5" y="0.0" width="50.5" height="33.5"/>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment content="0.0">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="33" name="Copperplate"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Z4-vs-Oqd">
+                                                                <rect key="frame" x="248" y="6.5" width="13.5" height="24.5"/>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment content="s">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="24" name="Copperplate"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
                                             </stackView>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Er-0P-Oa2">
-                                        <rect key="frame" x="124.5" y="513" width="133" height="229"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <rect key="frame" x="115.5" y="426.5" width="151" height="35"/>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="22"/>
                                         <state key="normal" title="End Workout"/>
                                         <connections>
                                             <action selector="endWorkoutPressed" destination="VJr-me-K8s" eventType="touchUpInside" id="irG-Gg-Ciu"/>
@@ -419,12 +597,12 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3xC-xB-veD"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3xC-xB-veD" firstAttribute="bottom" secondItem="UZr-T6-u9N" secondAttribute="bottom" constant="16" id="lTs-Pd-tqK"/>
+                            <constraint firstItem="UZr-T6-u9N" firstAttribute="top" secondItem="3xC-xB-veD" secondAttribute="top" constant="16" id="QSv-SI-RED"/>
                             <constraint firstItem="UZr-T6-u9N" firstAttribute="leading" secondItem="cAT-Py-105" secondAttribute="leading" constant="16" id="vt6-cN-Lhw"/>
                             <constraint firstItem="3xC-xB-veD" firstAttribute="trailing" secondItem="UZr-T6-u9N" secondAttribute="trailing" constant="16" id="xRC-7r-wbJ"/>
-                            <constraint firstItem="UZr-T6-u9N" firstAttribute="top" secondItem="3xC-xB-veD" secondAttribute="top" constant="16" id="zVq-0i-yHF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Rb2-af-4gd"/>
@@ -432,7 +610,9 @@
                         <outlet property="avgSplitLabel" destination="mca-lU-SOf" id="p9r-qk-3v4"/>
                         <outlet property="currentSplitLabel" destination="odc-bt-a20" id="l0P-bV-CbP"/>
                         <outlet property="distanceLabel" destination="TIc-ih-emX" id="K4r-7G-deS"/>
+                        <outlet property="driveTimeLabel" destination="8fk-Qz-WW8" id="DtD-1D-DQJ"/>
                         <outlet property="elapsedTimeLabel" destination="Kuz-my-Cbn" id="x7h-t4-wh0"/>
+                        <outlet property="recoveryTimeLabel" destination="A6d-T0-FSA" id="rFr-aD-KQa"/>
                         <outlet property="strokeRateLabel" destination="gqg-YF-quZ" id="45E-8p-dTw"/>
                     </connections>
                 </viewController>
@@ -448,6 +628,14 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hQh-gG-5T3">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                            <color key="textColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -460,9 +648,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="RowerImage" width="1600" height="906"/>
+        <image name="RowerImage2" width="1024" height="768"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
